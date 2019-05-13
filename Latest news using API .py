@@ -48,9 +48,11 @@ background_image=tk.PhotoImage(file='news.png')
 background_image=background_image.zoom(2,2)
 background_label=tk.Label(root, image=background_image)
 background_label.place(x=0, y=0,relwidth=1,relheight=1)
+
 #.....................LABEL FOR TOP HEADING OF WINDOW..................#
 label=tk.Label(root,text="Get Latest News Updates",font=('Courier',35))
 label.place(relx=0.1,rely=0.01,relwidth=0.75,relheight=0.1)
+
 #.....................UPPER FRAME FOR COMBOBOX AND GO BUTTON...........#
 frame=tk.Frame(root, bg='midnight blue',bd=3, relief=tk.SUNKEN)
 frame.place(relx=0.5,rely=0.1,relwidth=0.75,relheight=0.1,anchor='n')
@@ -63,6 +65,7 @@ for i in country_dict:
     combo['values'] = (*combo['values'], i)
 combo.current(0)
 combo.place(relx=0.005,rely=0.25,relwidth=0.65, relheight=0.5)
+
 #.....................BUTTON FUNCTION....................................#
 def clicked():
     country = combo.get()
@@ -89,6 +92,7 @@ def clicked():
             txt.insert(tk.INSERT, i['description'] + '\n\n','description')
             txt.tag_config('headline',font=('Courier',16,'bold'))
             txt.tag_config('description',font=('Courier',14))
+            
 #.....................GO BUTTON...................................#
 button = tk.Button(frame, text='GO', font=('Courier',25), command=clicked)
 button.place(relx=0.7, rely=0.25, relwidth=0.3, relheight=0.5,)
