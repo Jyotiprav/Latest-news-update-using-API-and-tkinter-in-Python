@@ -11,6 +11,11 @@ This application fetch the latest news update of selected country. A GUI has bee
 <img height="500" src="https://github.com/Jyotiprav/Latest-news-update-using-API-and-tkinter-in-Python/blob/master/ss1.png/">
 </br>
 
+<br>
+<img height="500" src="https://github.com/Jyotiprav/Latest-news-update-using-API-and-tkinter-in-Python/blob/master/ss2.png/">
+</br>
+
+Source code of this application is in Latest news using API .py file.
 
 ## References:
 [1]https://www.digitalocean.com/community/tutorials/how-to-use-web-apis-in-python-3
